@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Basic CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color:#ff8a1d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e21c0e;
+}
+
+/* Product Grid */
+.products {
+    padding: 2rem 0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.product p {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.product .btn {
+    margin-top: 1rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+</style>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo" align="center">My-Shop</div>
+           
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to the Shop</h1>
+            <p>Here you will find Newest as well as oldest (second hand)Variety of Ac and Refrigration For purchasing any product you need to contact us first.</p>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/product3.png" alt="Product Image">
+                    <h3>Air Conditioner</h3>
+                  
+                    <a href="#" class="btn">View</a>
+                </div>
+                <div class="product">
+                    <img src="images/product1.png" alt="Product Image">
+                    <h3>Fridge</h3>
+                    
+                    <a href="#" class="btn">View</a>
+                </div>
+                <div class="product">
+                    <img src="images/product2.png" alt="Product Image">
+                    <h3>Washing Machine</h3>
+                    
+                    <a href="#" class="btn">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
